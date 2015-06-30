@@ -11,3 +11,5 @@ I have passion for algorithms and data structures. I enjoy solving programming p
 I am good with learning new skills and applying them to ongoing projects. I am a self learner and will never give up on an interesting technical challenge.
 
 In the past few years, I've worked as backend software engineer and/or architect, and designed complex backend solution in c# and golang. I also do c/c++ and haskell when I am not hiding behind my office computer.
+
+You can contact me on [gmail](mailto:desaiparth08@gmail.com)
