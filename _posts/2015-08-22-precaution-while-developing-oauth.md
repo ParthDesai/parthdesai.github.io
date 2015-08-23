@@ -15,6 +15,7 @@ This attack is dependent upon implementation of OAuth2.0, and not the protocol i
 
 Timing attack can be used in many ways in Oauth2.0 process. I am giving here example of one of the simplest scenario.
 
+
 Example
 -------
 In the server side OAuth2.0a process, the last call is to exchange authorisation code
@@ -30,7 +31,7 @@ In this case, timing attack would work as follows:
 
 * So, Now all attacker needs to do is change first bit again and again until the time to return error response slightly increases. After verifying that, she just needs to keep that byte as it is, and change the next byte.
 
-One aspect of this attack, that makes it dangerous is that, we don't even need to brute force the code and secret anymore. We can just measure time, and predict that whether this byte is valid or not.
+One aspect of this attack, that makes it dangerous is that, we don't even need to brute force the code and secret anymore. We can just measure time, and predict that whether current byte is valid or not.
 
 
 Prevention
@@ -42,7 +43,7 @@ Prevention
 
 Further Information
 -------------------
-
+* [Wikipedia](https://en.wikipedia.org/wiki/Timing_attack)
 
 
 
