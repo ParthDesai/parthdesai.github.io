@@ -25,20 +25,22 @@ Now, Attacker wants to gain access to this server as this client. She knows the 
 
 In this case, timing attack would work as follows:
 
-* Attacker sends request using valid client id, but with specially crafted authorisation code and client secret such that, their xor would yield minimum non-zero bytes. This can be achieved via selecting sufficient random strings. Attacker receives the response and measure the time required for that response.
+* Attacker sends request using valid client id. And authorisation code and client secret are some random string. Attacker receives the response and measure the time required for that response.
 
 * Now, as you know a standard comparison routine in most programming language is implemented in such a fashion that, they check two byte sequence byte-by-byte and return false, immediately when it found different byte.
 
-* So, Now all attacker needs to do is change first bit again and again until the time to return error response slightly increases. After verifying that, she just needs to keep that byte as it is, and change the next byte.
+* The key concept here is that for **typical string comparision routine the time required to execute is propotional to the position of the first non-matching byte from start of the byte sequence**.
 
-One aspect of this attack, that makes it dangerous is that, we don't even need to brute force the code and secret anymore. We can just measure time, and predict that whether current byte is valid or not.
+* So, Now all attacker needs to do is change first byte again and again until the time to return error response slightly increases or decreases (if she have used correct byte in first time, time will decrease otherwise it will increase.) After verifying that, she just needs to keep that byte as it is, and change the next byte. This process is continued for rest of the bytes.
+
+One aspect of this attack, that makes it dangerous is that, we don't even need to brute force the code and secret anymore. We can just measure time, and predict that whether current byte is valid or not. This can also be easily automated.
 
 
 Prevention
 ----------
-* Use constant time compare functions: Nowadays, many programming language provide library function that uses constant time to compare two byte sequence, instead of returning decision immediately whenever wrong byte appears.
+* **Use constant time compare functions:** Nowadays, many programming language provide library function that uses constant time to compare two byte sequence, instead of returning decision immediately whenever wrong byte appears.
 
-* Time-out authorisation code: Authorisation code should time-out after some time limit. (Around 5 to 15 minutes)
+* **Time-out authorisation code:** Authorisation code should time-out after some reasonable time limit (from 5 minutes to 45 minutes.)
 
 
 Further Information
