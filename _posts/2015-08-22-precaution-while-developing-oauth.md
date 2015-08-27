@@ -9,11 +9,11 @@ comments: true
 
 Timing attack
 =============
-This attack is quite common and is applicable to every situation where user send certain information to the server, and it needs to verify this info by matching it to the information stored in server, or via any cryptographic algorithm whose execution time directly depend upon the input data.
+This attack is quite common and is applicable to every situation where user sends certain information to the server, and it needs to verify this information by matching it to the information stored in server, or via any cryptographic algorithm whose execution time directly depend upon the input data.
 
 This attack is dependent upon implementation of OAuth2.0, and not the protocol itself.
 
-Timing attack can be used in many ways in Oauth2.0 process. I am giving here example of one of the simplest scenario.
+Timing attack can be used in many ways in Oauth2.0 process. I am giving here an example of one of the simplest scenario.
 
 
 Example
