@@ -38,6 +38,7 @@ Reflection apis are exposed in golang, through built-in package called `reflect`
 Official `reflect` package documentation: [Reflect Documentation](http://golang.org/pkg/reflect/)
 
 There are two central concepts, in context of `reflect` package which we need to understand before diving into the code:
+
 * `Type`: It is an Object that represent go types as well as user defined types. For example: `int`, `string`, `map`, `func`.
 
 * `Value`: It is an Object, which encapsulates and act as an interface to the underlying Go Object. It is useful when we want to do some common operation on the object of particular kind (i.e array or map).
