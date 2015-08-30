@@ -55,9 +55,9 @@ Word of Caution
 ---------------
 There are certain situation where we should avoid generic function:
 
-* Where speed is prime concern: Generic functions are slow. For example `map` function in previous example, is quite slower than its static counterpart. 
+* **Where speed is prime concern:** Generic functions are slow. For example `map` function in previous example, is quite slower than its static counterpart. 
 
-* Where compile time safety is requird: As you can see, the function we have written accepts anything for its parameters, thanks to `interface{}` type. This makes it very flexible to use this function for different data types. But, that also mean that now the compiler, cannot point out error at compile time. Probability of writing errneous code also increases in tihs case. So for large generic program, we must rely on extensive testing to make sure, it works properly.
+* **Where compile time safety is requird:** As you can see, the function we have written accepts anything for its parameters, thanks to `interface{}` type. This makes it very flexible to use this function for different data types. But, that also mean that now the compiler, cannot point out error at compile time. Probability of writing errneous code also increases in tihs case. So for large generic program, we must rely on extensive testing to make sure, it works properly.
 
 
 
