@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Design generic function in golang, with help of functional programming and reflection
+title:  Design generic functions in golang, with help of functional programming and reflection
 description: ""
 category: articles
 tags: [golang, go, functional programming, reflection, reflect]
@@ -38,28 +38,10 @@ Reflection apis are exposed in golang, through built-in package called `reflect`
 Official `reflect` package documentation: [Reflect Documentation](http://golang.org/pkg/reflect/)
 
 There are two central concepts, in context of `reflect` package which we need to understand before diving into the code:
-* `Type`: It is an Object that represet go types as well as user defined types. For example: `int`, `string`, `map`, `func`.
+* `Type`: It is an Object that represent go types as well as user defined types. For example: `int`, `string`, `map`, `func`.
 
 * `Value`: It is an Object, which encapsulates and act as an interface to the underlying Go Object. It is useful when we want to do some common operation on the object of particular kind (i.e array or map).
 
 With help of reflection and functional programming, we can write a generic function in go, with run-time safety.
 
 {% gist 5e0f1d4725a644f1e632 %}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
