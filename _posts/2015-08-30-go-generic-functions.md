@@ -9,9 +9,9 @@ comments: true
 
 Overview
 ========
-Starting from golang 1.1, it offers reflection support to do almost anything dynamically. Combine that with functional programming support, and you can write generic functions in no time.
+Starting from golang 1.1, it offers reflection support to do almost anything dynamically. Combine that with functional programming support, and you can write generic functions that operate on combination of any data type and function.
 
-In this article, I will describe how to write generic functions in golang, as well as pros and cons of the same.
+In this article, I will describe how to write generic functions in golang, as well as certain situation to avoid.
 
 Functional Programming in Golang
 --------------------------------
