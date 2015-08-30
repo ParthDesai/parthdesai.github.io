@@ -45,20 +45,3 @@ There are two central concepts, in context of `reflect` package which we need to
 With help of reflection and functional programming, we can write a generic function in go, with run-time safety.
 
 {% gist 5e0f1d4725a644f1e632}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
