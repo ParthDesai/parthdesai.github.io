@@ -45,4 +45,19 @@ There are two central concepts, in context of `reflect` package which we need to
 
 With help of reflection and functional programming, we can write a generic function in go, with run-time safety.
 
+By run time type safety, I mean that the types of a function’s arguments are consistent with semantics of function or else the function predictably fails at run time with a reasonable error message. 
+
 {% gist 5e0f1d4725a644f1e632 %}
+
+As you can see in this example, we have used `Value`, and `Type` cleverly, to check if input parameters confirms the semantics of mapping, and to construct output argument.
+
+Word of Caution
+---------------
+There are certain situation where we should avoid generic function:
+
+* Where speed is prime concern: Generic functions are slow. For example `map` function in previous example, is quite slower than its static counterpart. 
+
+* Where compile time safety is requird: As you can see, the function we have written accepts anything for its parameters, thanks to `interface{}` type. This makes it very flexible to use this function for different data types. But, that also mean that now the compiler, cannot point out error at compile time. So for large generic program, we must rely on extensive testing to make sure, it works properly.
+
+
+
