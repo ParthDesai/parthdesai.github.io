@@ -31,7 +31,7 @@ Enter reflection!!
 
 Reflection in Golang 
 --------------------
-Unlike C/C++, in golang every object retains associated type information, even if it is assigned to a `interface` variable. This plays key part, while using reflection.
+Unlike C/C++, in golang every object retains associated type information, even if it is assigned to a variable with `interface{}` type. This feature plays key part, while using reflection.
 
 Reflection apis are exposed in golang, through built-in package called `reflect`.
 
