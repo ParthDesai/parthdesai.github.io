@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Design generic function in golang, with help of functional programming and reflection
+title:  Design generic functions in golang, with help of functional programming and reflection
 description: ""
 category: articles
 tags: [golang, go, functional programming, reflection, reflect]
