@@ -17,7 +17,7 @@ Functional Programming in Golang
 --------------------------------
 Golang supports first class functions, higher-order functions, user-defined function types, function literals, closures, and multiple return values. 
 
-For scope of this article, I will demonstrate three of above features: function literals, function types and higher order functions.
+For scope of this article, I will demonstrate three of the above features: function literals, function types and higher order functions.
 
 {% gist 52cb0e477270600b5383 %}
 
