@@ -8,7 +8,7 @@ layout: nil
     </url>
     
     <url>
-    	<loc>https://parthdesai.me/about/</loc>
+    	<loc>https://parthdesai.me/about</loc>
     </url>
     
     {% for post in site.posts %}
