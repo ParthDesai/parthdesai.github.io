@@ -53,7 +53,7 @@ As you can see in this example, we have used `Value`, and `Type` cleverly, to ch
 
 Word of Caution
 ---------------
-There are certain situation where we should avoid generic function:
+There are certain situations where we should avoid generic function:
 
 * **Where speed is prime concern:** Generic functions are slow. For example `map` function in previous example, is quite slower than its static counterpart. 
 
