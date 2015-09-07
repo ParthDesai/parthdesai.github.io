@@ -11,7 +11,7 @@ Overview
 ========
 Starting from golang 1.1, it offers reflection support to do almost anything dynamically. Combine that with functional programming support, and you can write generic functions that operate on combination of any data type and function.
 
-In this article, I will describe how to write generic functions in golang, as well as certain cases, where its better to write static function.
+In this article, I will describe how to write generic functions in golang, as well as disadvantages of it, compared to static functions.
 
 Functional Programming in Golang
 --------------------------------
@@ -53,8 +53,8 @@ As you can see in this example, we have used `Value`, and `Type` cleverly, to ch
 
 Word of Caution
 ---------------
-There are certain situations where we should avoid generic function:
+Like anything, there are certain disadvantages of using generic functions:
 
-* **Where speed is prime concern:** Generic functions are slow. For example `map` function in previous example, is quite slower than its static counterpart. 
+* **They are very very slow:** Generic functions are quite slow. For example `map` function in previous example, is almost 100x time slower than its static counterpart.
 
-* **Where compile time safety is requird:** As you can see, the function we have written accepts anything for its parameters, thanks to `interface{}` type. This makes it very flexible to use this function for different data types. But, that also mean that now the compiler, cannot point out error at compile time. Probability of writing erroneous code also increases in this case. So for large generic program, we must rely on extensive testing to make sure, it works properly.
+* **You lose on compile time error checking:** As you can see, the function we have written accepts anything for its parameters, thanks to `interface{}` type. This makes it very flexible to use this function for different data types. But, that also mean that now the compiler, cannot point out error at compile time. Probability of writing erroneous code also increases in this case. So for large generic program, we must rely on extensive testing to make sure, it works properly.
