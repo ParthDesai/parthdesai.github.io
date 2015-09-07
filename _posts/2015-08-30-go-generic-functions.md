@@ -53,7 +53,7 @@ As you can see in this example, we have used `Value`, and `Type` cleverly, to ch
 
 Word of Caution
 ---------------
-Like anything, there are certain disadvantages of using generic functions:
+There are certain disadvantages of using generic functions:
 
 * **They are very very slow:** Generic functions are quite slow. For example `map` function in previous example, is almost 100x time slower than its static counterpart.
 
