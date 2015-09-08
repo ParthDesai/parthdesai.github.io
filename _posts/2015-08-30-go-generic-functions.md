@@ -21,11 +21,11 @@ For scope of this article, I will demonstrate three of the above features: funct
 
 {% gist 52cb0e477270600b5383 %}
 
-In this example, we implemented `filterArray` function, that takes two arguments, array of integer and a function. And filter the array using the function passed.
+In this example, we implemented `filter` function, that takes two arguments, slice of integer and a function. And filter the slice using the function passed.
 
-As you can see, we call `filterArray` function, two times with different function literals, first literal filters out odd numbers, while second removes even numbers.
+As you can see, we call `filter` function, two times with different function literals, first literal filters out odd numbers, while second removes even numbers.
 
-But, this is not enough to write truly generic code, as you can see, we can only pass integer array and only functions who are compatible with function type that we declared beforehand. 
+But, this is not enough to write truly generic code, as you can see, we can only pass integer slice and only functions who are compatible with function type that we declared beforehand. 
 
 Enter reflection!!
 
