@@ -3,7 +3,7 @@ layout: default
 title: About
 ---
 ## About Parth
-<iframe src="http://githubbadge.appspot.com/parthdesai?s=1&a=0" style="border: 0;height: 142px;width: 200px;overflow: hidden;" frameBorder="0"></iframe>
+<iframe src="https://githubbadge.appspot.com/parthdesai?s=1&a=0" style="border: 0;height: 142px;width: 200px;overflow: hidden;" frameBorder="0"></iframe>
 
 I have passion for algorithms and data structures.  I enjoy solving programming puzzles in my free time. I am passionate about writing software that scalable and reliable.  I spend a great amount of time improving my skills as a programmer. 
 
