@@ -13,6 +13,6 @@ In the past few years, I've worked as backend software engineer and/or architect
 
 Currently, I am designing key components of the restful web-service. My work involves making web-service as fast and as scalable as possible, and also maintain code quality and proper architecture while doing that. I am also doing technical review for renowned publisher in the UK for upcoming go programming language book. 
 
-In my spare time, I usually working on c/c++ and haskell, as well as learn and understand machine learning.
+In my spare time, I usually working on c/c++ and haskell and machine learning.
 
 You can contact me on [gmail](mailto:desaiparth08@gmail.com)
