@@ -11,8 +11,8 @@ My programming style is to make the smallest change necessary to achieve desired
 
 In the past few years, I've worked as backend software engineer and/or architect, and designed complex backend solution in [c#](https://github.com/parthdesai/sso) and [golang](https://github.com/bulletind/khabar). 
 
-Currently, I am working on developing pseudo real-time integrations with popular web sites, that enables our product to be integrated seamlessly with these sites(Github, stackexchange, twitter etc.). I am also doing technical review for renowned publisher in the UK for upcoming go programming language book.
+Currently, I am designing key components of the restful web-service. My work involves making web-service as fast and as scalable as possible, and also maintain code quality and proper architecture while doing that. I am also doing technical review for renowned publisher in the UK for upcoming go programming language book. 
 
-I also work on c/c++ and haskell when I am not hiding behind my office computer.
+In my spare time, I usually working on c/c++ and haskell, as well as learn and understand machine learning.
 
 You can contact me on [gmail](mailto:desaiparth08@gmail.com)
