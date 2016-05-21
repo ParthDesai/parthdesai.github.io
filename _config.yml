@@ -21,7 +21,7 @@ google_analytics: UA-40854387-1
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:
 
-markdown:     redcarpet
+markdown:     kramdown
 permalink:    pretty
 pygments:     true
 paginate:     5
