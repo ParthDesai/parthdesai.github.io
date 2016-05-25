@@ -16,7 +16,7 @@ In this blog post, We will build a simple RPC server step by step.
 ## 1. Define an interface and shared structs
 For sake of simplicity, we will choose an interface with two methods: `Multiply` and `Divide`, which perform `*` and `/` operations respectively.
 
-There will be only two shared structs called `Args`, and `Quotient` that will be used to pass arguments from client to server and represent the output of divide, respectively.
+There will be only two shared structs called `Args` and `Quotient` that will be used to pass arguments from client to server and represent the output of divide, respectively.
 
 {% gist b22355ff4877f712ded4d1c1cd08e488 %}
 {% gist 81158f3b12ca1e0cdb7becbe40be3c2f %}
