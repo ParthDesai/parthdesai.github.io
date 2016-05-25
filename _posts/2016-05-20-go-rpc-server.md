@@ -23,7 +23,7 @@ There will be only two shared structs called `Args` and `Quotient` that will be 
 
 
 ## 2. Write implementation for the interface
-Now, we will write struct which implements two method we mentioned above: `Multiply` and `Divide`.
+Now, we will write struct which implements two methods we mentioned above: `Multiply` and `Divide`.
 
 {% gist  ca422ce77052ed1b646876f6c70a555a %}
 
