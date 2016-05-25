@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  How to build RPC server in golang (with Examples)
+title:  How to build RPC server in golang (step by step with examples)
 description: ""
 category: articles
 tags: [golang, go, rpc, rpc server, remote procedure call, RPC]
