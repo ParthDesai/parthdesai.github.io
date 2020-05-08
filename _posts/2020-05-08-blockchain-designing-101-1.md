@@ -41,10 +41,10 @@ In some blockchain design, Every node in network needs to maintain some data abo
 ## Notable consensus algorithms:
 
 ### Proof of Work
+Proof of work or PoW for short is earliest consensus algorithm used in bitcoin and ethereum. 
 
 ### Proof of Stake
-
-### Delegated Proof of Stake
+Proof of stake is more recent algorithm invented to overcome some shortcomings of PoW. 
 
 --------
 
