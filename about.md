@@ -5,15 +5,16 @@ title: About
 ## About Parth
 <iframe src="https://githubbadge.appspot.com/parthdesai?s=1&a=0" style="border: 0;height: 142px;width: 200px;overflow: hidden;" frameBorder="0"></iframe>
 
-I have 7 years of experience in designing server side solutions and 2 years of experience leading and guiding teams. I have architected and built several scalable projects from scratch. Some of them handles around millions of users every day without any hiccups. 
+Computer programs always captivated me. 
 
-My programming style is to make the smallest change necessary to achieve desired goal and keep the clever stuff behind the curtain of the clean interface. So I always try to write modular and generic code. And I refactor/delete code as part of each change to keep code smell in check ;).
+So, when I sat down in front of TurboC IDE at the age of 16, I spent hours trying to code solution to traveling salesman problem and in the process fell in love with coding. It was fascinating to me how you can type some ASCII characters in IDE, click compile and see your creation come to life. :) 
 
-My main areas of expertise are architecture and algorithms. I am well versed in go.
+I decided there and then that I will become a software engineer when I grow up. 
 
-Currently, I am working as a platform architect at [Loom Network](https://loomx.io/team/), taking ownership of implementation of private key storage using hashicorp vault, developing custom reactors in tendermint (blockchain consensus engine), and writing oracle as bridge between two or more blockchains.
-I have also developed custom consensus reactor in [tendermint](https://www.tendermint.com/) to make distributed oracle reach consensus.
+At my first job at Changer, I designed and implemented the Single-sign-on server with a custom multi-domain OAuth workflow. Created background job in nodejs to parse and store resumes of thousands of users at SuperJobs. Worked on creating ultra-scalable microservices at IndusOS, which handles millions of users even today. After all this, I still felt I haven’t found my niche. 
 
-I'm very passionate about web infrastructure, concurrency, back-end and keep on tinkering with new technologies to create something different.
+It all changed with a contract at Loom network, I was introduced to blockchain programming and instantly took a liking to it. I designed a consensus algorithm for distributed oracle from scratch and worked on adding features to their [tendermint](https://tendermint.com/) based blockchain platform. During my brief stint at [Solana](https://solana.com/), I implemented rent mechanism for user accounts, which is a key part of validator economics. 
+
+Currently, I am working at ChorusOne on the bridge between cosmos and substrate platforms, which enables cosmos chain to track finalized headers and authority set from substrate. 
 
 You can contact me on [gmail](mailto:desaiparth08@gmail.com).
