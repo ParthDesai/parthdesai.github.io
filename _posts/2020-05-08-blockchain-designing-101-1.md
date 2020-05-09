@@ -14,38 +14,34 @@ already familiar with basic blockchain concepts and looking to gain more knowled
 -------
 
 ## What is blockchain?
-Generically, Blockchain is *tree* of block of data linked with each other cryptographically. What this means is every block is built on top of its parent in such a way that changing contents of the parent invalidates child block. This forms core security aspect of blockchain.
+Generically, Blockchain is a *tree* of block of data linked with each other cryptographically. What this means is every block is built on top of its parent in such a way that changing contents of the parent invalidates child block. This forms core security aspect of blockchain.
 
-Every blockchain technology is unique, but they share some common concepts.
+Every blockchain implementation is unique, but they share some common concepts. 
+
+### Distributed state machine
+Blockchain contains a distributed state machine and state transition function that allows it to transition from previous state to next state. This state transition function requires two inputs: 1) Previous state 2) state transition operations. It is required that state transition function is deterministic for every possible input, so that all correct node reaches same state. 
+
+### State transition operation
+State transition operation is a way outside world interact with blockchain. For blockchain to function correctly, it needs to be atomic and reversible. Two types of state transition operations can exists: 1) User submitted transition operations 2) transition operation generated as part of system operation. Example of 2nd case would be change of validator set in PoS implementation.
+
+### Genesis state
+Initial state from which all nodes in the blockchain start is called `Genesis` state. It is typically determined by node operators offline.
+
+### Block
+Typically every block except `Genesis` block contains three things: 1) A cryptographic data that links a block to its parent 2) state transition operations 3) Some portion of current state of blockchain.
 
 ### Genesis block
-Every blockchain's tree of block has one root block called `Genesis`, typically determined by collaboration between node operators.
+Blockchain's tree of block has one root block called `Genesis`, derived from `Genesis` state. `Genesis` block is special in a sense that it does not contain any user submitted state transition operation, but it could still contain operation generated as part of system operation.
 
-### Consensus algorithm
-Consensus algorithm is heart of blockchain. It's responsibility is to make sure network can continuously make progress and majority of nodes are in agreement regarding state of the blockchain. At higher level, it is responsible for below three tasks.
+### Block construction
+Defines which node has right to construct the block, and which state transition operations can be part of that block. In case of some implementation, nodes can produce different blocks from same parent depending upon some conditions. One scenario in which this might happen where due to network partition some nodes on network does not receive the block constructed by current block constructor and are allowed to produce different version of block for same tree height.
 
-#### Block production
-Refers to how nodes in blockchain produce child block from parent block. In case of some consensus algorithm, nodes can produce different blocks from same parent depending upon some conditions for example network partition. Which is the reason we described blockchain as *tree* instead of *linked list*.  
-
-#### Block finalization
+### Block finalization Gadget
 Refers to how nodes in blockchain determine which block to finalize out of all siblings at particular height of tree. When we say a block is finalized, it means that out of all siblings of blocks, that particular block is considered canonical by majority of nodes and typically can't be reverted. 
 
-#### Fork selection
+### Fork selection
 Refers to how nodes in blockchain determine canonical fork from the tree of blocks. Here fork is defined as path from root node to one of the leaf node. Canonical fork must contain all finalized block.
-
-Depending upon consensus algorithm, either above three task are handled separately or handled in tightly coupled manner.
-
-### Local state
-In some blockchain design, Every node in network needs to maintain some data about current state of blockchain, for example auxiliary state of data contained in blocks, consensus algorithm configuration etc. This state is used by block production algorithm along side parent block to derive child block.
-
-## Notable consensus algorithms:
-
-### Proof of Work
-Proof of work or PoW for short is earliest consensus algorithm used in bitcoin and ethereum. 
-
-### Proof of Stake
-Proof of stake is more recent algorithm invented to overcome some shortcomings of PoW. 
 
 --------
 
-In next part we will discuss how above consensus algorithms work and why they were invented.
+In next part we will discuss different blockchain design and how they evolved.
