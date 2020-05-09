@@ -16,10 +16,10 @@ already familiar with basic blockchain concepts and looking to gain more knowled
 ## What is blockchain?
 Generically, Blockchain is a *tree* of block of data linked with each other cryptographically. What this means is every block is built on top of its parent in such a way that changing contents of the parent invalidates child block. This forms core security aspect of blockchain.
 
-Every blockchain implementation is unique, but they share some common concepts. 
+Every blockchain implementation is unique, but they share some common concepts.
 
 ### Distributed state machine
-Blockchain contains a distributed state machine and state transition function that allows it to transition from previous state to next state. This state transition function requires two inputs: 1) Previous state 2) state transition operations. It is required that state transition function is deterministic for every possible input, so that all correct node reaches same state. 
+Blockchain contains a distributed state machine and state transition function that allows it to transition from previous state to next state. This state transition function requires two inputs: 1) Previous state 2) state transition operations. It is required that state transition function is deterministic for every possible input, so that all correct node reaches same state.
 
 ### State transition operation
 State transition operation is a way outside world interact with blockchain. For blockchain to function correctly, it needs to be atomic and reversible. Two types of state transition operations can exists: 1) User submitted transition operations 2) transition operation generated as part of system operation. Example of 2nd case would be change of validator set in PoS implementation.
@@ -37,7 +37,7 @@ Blockchain's tree of block has one root block called `Genesis`, derived from `Ge
 Defines which node has right to construct the block, and which state transition operations can be part of that block. In case of some implementation, nodes can produce different blocks from same parent depending upon some conditions. One scenario in which this might happen where due to network partition some nodes on network does not receive the block constructed by current block constructor and are allowed to produce different version of block for same tree height.
 
 ### Block finalization Gadget
-Refers to how nodes in blockchain determine which block to finalize out of all siblings at particular height of tree. When we say a block is finalized, it means that out of all siblings of blocks, that particular block is considered canonical by majority of nodes and typically can't be reverted. 
+Refers to how nodes in blockchain determine which block to finalize out of all siblings at particular height of tree. When we say a block is finalized, it means that out of all siblings of blocks, that particular block is considered canonical by majority of nodes and can't be reverted. This is used to assure user that the state transition operation submitted by operation is now final, and won't be reverted in future.
 
 ### Fork selection
 Refers to how nodes in blockchain determine canonical fork from the tree of blocks. Here fork is defined as path from root node to one of the leaf node. Canonical fork must contain all finalized block.
