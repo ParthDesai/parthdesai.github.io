@@ -34,10 +34,10 @@ Two types of state transition operations exists:
 2. System generated: Generated as part of system operation. One example would be enacting a new validator set after each pre-defined period in the PoS system.
 
 ### Block
-Typically every block except `Genesis` block contains three things: 1) A cryptographic data that links a block to its parent 2) one or more state transition operations 3) Some portion of current state of blockchain.
+Typically every block except genesis block contains three things: 1) A cryptographic data that links a block to its parent 2) one or more state transition operations 3) Some portion of current state of blockchain.
 
 ### Genesis block
-Blockchain's tree of block has one root block called `Genesis`, derived from `Genesis` state. `Genesis` block is special in the sense that it does not contain any user submitted state transition operation, but it could still contain operation generated as part of system operation.
+Blockchain's tree of block has one root block called genesis, derived from genesis state. Genesis block is special in the sense that it does not contain any user submitted state transition operation, but it could still contain operation generated as part of system operation.
 
 ### Block construction
 Defines which node has the right to construct the block, and which state transition operations can be part of that block. In case of some implementation, nodes can produce different blocks from same parent depending upon some conditions. One scenario in which this might happen where due to network partition some nodes on network does not receive the block constructed by current block constructor and are allowed to produce a different version of block for same tree height.
