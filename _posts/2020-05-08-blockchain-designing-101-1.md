@@ -30,7 +30,7 @@ For correct operation of blockchain, state machine must be deterministic for eve
 Initial state from which all nodes in the blockchain start is called genesis state. It is typically determined by node operators offline.
 
 ### State transition operation
-State transition operation is a data blob interpretable by state machine. Given current state, successful interpretation produces a changeset, which is then applied by state machine to current state to produce next state. For blockchain to function correctly, state transition operation needs to be atomic and reversible. 
+State transition operation describes what operation state machine needs to perform on the blockchain state, and is interpretable by the state machine. Given current state, successful interpretation produces a changeset, which is then applied by state machine to current state to produce next state. For blockchain to function correctly, state transition operation needs to be atomic and reversible. 
 
 Two types of state transition operations exists: 
 1. User submitted: Typically submitted by user via api exposed by nodes.
