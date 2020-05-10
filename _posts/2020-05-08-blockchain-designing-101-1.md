@@ -31,7 +31,7 @@ State transition operation is a data blob interpretable by state machine. Given 
 
 Two types of state transition operations exists: 
 1. User submitted: Typically submitted by user via api exposed by nodes.
-2. System generated: Generated as part of system operation. One example would be enacting a new validator set after each pre-defined period in the PoS system.
+2. System generated: Generated as part of system operation. One example would be enacting a new validator set in Proof-of-Stake blockchain.
 
 ### Block
 Typically every block except genesis block contains three things: 1) A cryptographic data that links a block to its parent 2) one or more state transition operations 3) Some portion of current state of blockchain.
