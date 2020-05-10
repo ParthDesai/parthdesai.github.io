@@ -42,7 +42,7 @@ Blockchain's tree of block has one root block called `Genesis`, derived from `Ge
 ### Block construction
 Defines which node has the right to construct the block, and which state transition operations can be part of that block. In case of some implementation, nodes can produce different blocks from same parent depending upon some conditions. One scenario in which this might happen where due to network partition some nodes on network does not receive the block constructed by current block constructor and are allowed to produce a different version of block for same tree height.
 
-### Block finalization Gadget
+### Block finalization
 Refers to how nodes in blockchain determine which block to finalize out of all siblings at a particular height of tree. When we say a block is finalized, it means that out of all siblings of blocks, that particular block is considered canonical by the majority of nodes and can't be reverted. This is used to assure user that the state transition operation submitted by operation is now final, and won't be reverted in future.
 
 ### Fork selection
