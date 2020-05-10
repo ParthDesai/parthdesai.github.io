@@ -21,7 +21,11 @@ For example, consider following blockchain visualization:
 Every blockchain implementation is unique, but they share some common concepts.
 
 ### State machine
-State machine describes how blockchain transitions from current state to next state. It requires two inputs: 1) current state 2) state transition operation. For correct operation of blockchain state machine must be deterministic for every possible input, so that all correct node reaches same state, upon consuming same input.
+State machine describes how blockchain transitions from current state to next state. It requires two inputs:
+1. current state 
+2. state transition operation.
+
+For correct operation of blockchain state machine must be deterministic for every possible input, so that all correct node reaches same state, upon consuming same input.
 
 ### Genesis state
 Initial state from which all nodes in the blockchain start is called genesis state. It is typically determined by node operators offline.
@@ -34,7 +38,10 @@ Two types of state transition operations exists:
 2. System generated: Generated as part of system operation. One example would be enacting a new validator set in Proof-of-Stake blockchain.
 
 ### Block
-Every block except genesis block contains three things: 1) A cryptographic data that links a block to its parent 2) one or more state transition operations 3) Some portion of current state of blockchain.
+Every block except genesis block contains three things: 
+1. A cryptographic data that links a block to its parent 
+2. one or more state transition operations 
+3. Some portion of current state of blockchain.
 
 ### Genesis block
 Blockchain's tree of block has one root block called genesis block, derived from genesis state. Genesis block is special in the sense that it does not contain any user submitted state transition operation, but it could still contain system generated state transition operations.
