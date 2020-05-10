@@ -7,7 +7,7 @@ tags: [blockchain, tendermint, ethereum, BFT]
 comments: true
 ---
 
-This is the first part of blockchain design 101 series. Aim of this blog series is to describe in detail what goes under the hood of blockchain. In first part, We are going to talk about some common blockchain concepts.
+This is the first part of blockchain design 101 series. Aim of this blog series is to describe in detail what goes under the hood of blockchain. In this part, We are going to talk about some common blockchain concepts.
 
 -------
 
@@ -34,16 +34,16 @@ Two types of state transition operations exists:
 2. System generated: Generated as part of system operation. One example would be enacting a new validator set in Proof-of-Stake blockchain.
 
 ### Block
-Typically every block except genesis block contains three things: 1) A cryptographic data that links a block to its parent 2) one or more state transition operations 3) Some portion of current state of blockchain.
+Every block except genesis block contains three things: 1) A cryptographic data that links a block to its parent 2) one or more state transition operations 3) Some portion of current state of blockchain.
 
 ### Genesis block
-Blockchain's tree of block has one root block called genesis, derived from genesis state. Genesis block is special in the sense that it does not contain any user submitted state transition operation, but it could still contain operation generated as part of system operation.
+Blockchain's tree of block has one root block called genesis block, derived from genesis state. Genesis block is special in the sense that it does not contain any user submitted state transition operation, but it could still contain system generated state transition operations.
 
 ### Block construction
 Defines which node has the right to construct the block, and which state transition operations can be part of that block. In case of some implementation, nodes can produce different blocks from same parent depending upon some conditions. One scenario in which this might happen where due to network partition some nodes on network does not receive the block constructed by current block constructor and are allowed to produce a different version of block for same tree height.
 
 ### Block finalization
-Refers to how nodes in blockchain determine which block to finalize out of all siblings at a particular height of tree. When we say a block is finalized, it means that out of all siblings of blocks, that particular block is considered canonical by the majority of nodes and can't be reverted. This is used to assure user that the state transition operation submitted by operation is now final, and won't be reverted in future.
+Refers to how nodes in blockchain determine which block to finalize out of all siblings at a particular height of tree. When we say a block is finalized, it means that out of all siblings of blocks, that particular block is considered as confirmed and depending upon actual implementation it is either impossible or only possible with significant effort to revert changeset produced by interpretation of said block.
 
 ### Fork selection
 Refers to how nodes in blockchain determine canonical fork from the tree of blocks. Here fork is defined as a path from root node to one of the leaf node. Canonical fork must contain all finalized block.
