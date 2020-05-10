@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Blockchain Design 101 - Part 1
-description: ""
+description: "Describes in detail inner workings of blockchain"
 category: articles
 tags: [blockchain, block, design, BFT, consensus]
 image: "blockchain-example.svg"
