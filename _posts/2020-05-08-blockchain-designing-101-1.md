@@ -7,7 +7,7 @@ tags: [blockchain, tendermint, ethereum, BFT]
 comments: true
 ---
 
-This is the first part of blockchain design 101. We are going to talk about some common concepts that are shared by all blockchain implementations. It is assumed that readers are already familiar with basic blockchain concepts.
+This is the first part of blockchain design 101. We are going to talk about what goes on under the hood of blockchain. It is assumed that readers are already familiar with basic blockchain concepts.
 
 -------
 
