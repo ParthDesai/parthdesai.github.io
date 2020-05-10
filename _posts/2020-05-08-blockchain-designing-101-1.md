@@ -3,7 +3,7 @@ layout: post
 title:  Blockchain Design 101 - Part 1
 description: ""
 category: articles
-tags: [blockchain, tendermint, ethereum, BFT]
+tags: [blockchain, block, design, BFT, consensus]
 comments: true
 ---
 
@@ -44,7 +44,7 @@ Every block except genesis block contains three things:
 3. Some portion of current state of blockchain.
 
 ### Genesis block
-Blockchain's tree of block has one root block called genesis block, derived from genesis state. Genesis block is special in the sense that it does not contain any user submitted state transition operation, but it could still contain system generated state transition operations.
+Blockchain's tree of block has one root block called genesis block, derived from genesis state. In most blockchain implementations, Genesis block is not allowed to contain any user submitted state transition operation, but system generated state transition operation can still be part of it.
 
 ### Block construction
 Defines which node has the right to construct the block, and which state transition operations can be part of that block. In case of some implementation, nodes can produce different blocks from same parent depending upon some conditions. One scenario in which this might happen where due to network partition some nodes on network does not receive the block constructed by current block constructor and are allowed to produce a different version of block for same tree height.
