@@ -7,16 +7,18 @@ tags: [blockchain, tendermint, ethereum, BFT]
 comments: true
 ---
 
-It is the first part of blockchain design 101 for developers. I am assuming that readers are already familiar with basic blockchain concepts, and want to know what goes under the hood.
+This is the first part of blockchain design 101 for developers. We are going to describe what goes on under the hood of blockchain. I am assuming that readers are already familiar with basic blockchain concepts.
 
 -------
 
 ## What is blockchain?
 Generically, Blockchain is a *tree* of block of data linked with each other cryptographically. What this means is every block is built on top of its parent in such a way that changing contents of the parent invalidates child block. This forms core security aspect of blockchain.
 
-Every blockchain implementation is unique, but they share some common concepts.
+For example, consider following blockchain visualization:
 
 <img src="/public/assets/blockchain-example.svg" alt="Sample blockchain" style="width:800px;"/>
+
+Every blockchain implementation is unique, but they share some common concepts.
 
 ### State machine
 State machine describes how blockchain transitions from current state to next state. It requires two inputs: 1) current state 2) state transition operation. For correct operation of blockchain state machine must be deterministic for every possible input, so that all correct node reaches same state, upon consuming same input.
