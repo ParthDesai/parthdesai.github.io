@@ -4,6 +4,7 @@ title:  Blockchain Design 101 - Part 1
 description: ""
 category: articles
 tags: [blockchain, block, design, BFT, consensus]
+image: "blockchain-example.svg"
 comments: true
 ---
 
@@ -14,7 +15,7 @@ This is the first part of blockchain design 101 series. Aim of this blog series 
 ## What is blockchain?
 Generically, Blockchain is a *tree* of block of data linked with each other cryptographically. What this means is every block is built on top of its parent in such a way that changing contents of the parent invalidates child block. This forms core security aspect of blockchain.
 
-<img src="/public/assets/blockchain-example.svg" alt="Sample blockchain" style="width:800px;"/>
+<img src="/public/images/blockchain-example.svg" alt="Sample blockchain" style="width:800px;"/>
 
 Every blockchain implementation is unique, but they share some common concepts.
 

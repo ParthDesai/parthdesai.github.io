@@ -14,6 +14,7 @@
   <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
   <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:image" content="{{ site.url }}/public/images/{{ page.image }}">
 
   <!-- Webmaster Tools verfication -->
   {% if site.google_verify %}<meta name="google-site-verification" content="{{ site.google_verify }}">{% endif %}
@@ -39,8 +40,8 @@
   <link rel="stylesheet" href="/public/css/github.min.css" async>
 
   <!-- Icons -->
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/touch-icon-144-precomposed.png">
-  <link rel="shortcut icon" href="/public/favicon.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/images/touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/public/images/favicon.png">
 
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
