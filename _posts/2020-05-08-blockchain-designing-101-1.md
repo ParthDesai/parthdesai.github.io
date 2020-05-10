@@ -14,16 +14,14 @@ This is the first part of blockchain design 101 series. Aim of this blog series 
 ## What is blockchain?
 Generically, Blockchain is a *tree* of block of data linked with each other cryptographically. What this means is every block is built on top of its parent in such a way that changing contents of the parent invalidates child block. This forms core security aspect of blockchain.
 
-For example, consider following blockchain visualization:
-
 <img src="/public/assets/blockchain-example.svg" alt="Sample blockchain" style="width:800px;"/>
 
 Every blockchain implementation is unique, but they share some common concepts.
 
 ### State machine
 State machine describes how blockchain transitions from current state to next state. It requires two inputs:
-1. current state 
-2. state transition operation.
+1. Current state 
+2. State transition operation
 
 For correct operation of blockchain state machine must be deterministic for every possible input, so that all correct node reaches same state, upon consuming same input.
 
@@ -40,7 +38,7 @@ Two types of state transition operations exists:
 ### Block
 Every block except genesis block contains three things: 
 1. A cryptographic data that links a block to its parent 
-2. one or more state transition operations 
+2. Zero or more state transition operations 
 3. Some portion of current state of blockchain.
 
 ### Genesis block
