@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  Blockchain design 101 for developers - Part 1
+title:  Blockchain design 101 - Part 1
 description: ""
 category: articles
 tags: [blockchain, tendermint, ethereum, BFT]
 comments: true
 ---
 
-This is the first part of blockchain design 101 for developers. We are going to describe what goes on under the hood of blockchain. I am assuming that readers are already familiar with basic blockchain concepts.
+This is the first part of blockchain design 101. We are going to talk about some common concepts that are shared by all blockchain implementations. It is assumed that readers are already familiar with basic blockchain concepts.
 
 -------
 
