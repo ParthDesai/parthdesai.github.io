@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Blockchain Design 101 - Part 1
-description: "Describes some common blockchain concepts like state machine, state transition operators, block construction and block finalization."
+description: "Describes some common blockchain concepts like state machine, state transition operator, block construction and block finalization."
 category: articles
 tags: [blockchain, block, design, BFT, consensus]
 image: "blockchain-example.png"
