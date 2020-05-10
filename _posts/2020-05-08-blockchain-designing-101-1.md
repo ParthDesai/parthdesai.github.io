@@ -24,7 +24,7 @@ Every blockchain implementation is unique, but they share some common concepts.
 State machine describes how blockchain transitions from current state to next state. It requires two inputs: 1) current state 2) state transition operation. For correct operation of blockchain state machine must be deterministic for every possible input, so that all correct node reaches same state, upon consuming same input.
 
 ### Genesis state
-Initial state from which all nodes in the blockchain start is called `Genesis` state. It is typically determined by node operators offline.
+Initial state from which all nodes in the blockchain start is called genesis state. It is typically determined by node operators offline.
 
 ### State transition operation
 State transition operation is a data blob interpretable by state machine. Given current state, successful interpretation produces a changeset, which is then applied by state machine to current state to produce next state. For blockchain to function correctly, state transition operation needs to be atomic and reversible. 
