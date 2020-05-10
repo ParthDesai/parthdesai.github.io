@@ -16,6 +16,8 @@ Generically, Blockchain is a *tree* of block of data linked with each other cryp
 
 Every blockchain implementation is unique, but they share some common concepts.
 
+<img src="/public/assets/blockchain-example.svg" alt="Sample blockchain" style="width:800px;"/>
+
 ### State machine
 State machine describes how blockchain transitions from current state to next state. It requires two inputs: 1) current state 2) state transition operation. For correct operation of blockchain state machine must be deterministic for every possible input, so that all correct node reaches same state, upon consuming same input.
 
