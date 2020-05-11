@@ -52,7 +52,7 @@ Defines which node has the right to construct the block, and which state transit
 Refers to how nodes in blockchain determine which block to finalize out of all siblings at a particular height of tree. When we say a block is finalized, it means that out of all siblings of blocks, that particular block is considered as confirmed and depending upon actual implementation it is either impossible or only possible with significant effort to revert changeset produced by interpretation of said block.
 
 ### Fork selection
-Fork selection refers to how nodes select best fork for them to append new block to. Here fork is defined as a path from root node to one of the leaf node. Best fork must contain all finalized blocks.
+Fork selection refers to how nodes select best fork for them to append new block to. Here fork is defined as a path from root node to one of the leaf nodes. In some implementations, this selection process can be greedy, where nodes select fork which maximizes their rewards. Best fork must contain all finalized blocks.
 
 --------
 
