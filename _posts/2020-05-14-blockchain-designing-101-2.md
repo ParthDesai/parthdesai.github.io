@@ -20,11 +20,17 @@ In Proof of work blockchain, To construct a valid block node need to find an ans
 A fork having most difficulty as sum of difficulties of all blocks contained can be seen as a fork chosen to extend by a set of nodes with the largest cumulative resources. So, a node is incentivized to select that fork to append new block, due to high probability of said block remaining canonical.
 
 ### Block finality
-Pure proof of work blockchain offers probabilistic finality, because there is always some probability however small, that current best fork can be overtaken by some other fork by producing more work. This probability is inversely proportional to difference in difficulty between current best fork and that other fork. So, users need to wait for large enough difference in difficulty between block's fork and other forks, before considering said block final for all practical purposes. 
+Pure proof of work blockchain offer probabilistic finality, because there is always some probability however small, that block can become non-canonical once another fork overtakes fork containing that block. Probability of that happening is inversely proportion to amount of difficulty added on top of said block by building more blocks on top of that block, as more difficulties added on top less chance for a fork created at height less than block to overtake that block's fork.
+
+Pure proof of work blockchain offers probabilistic finality, because there is always some probability however small, that current best fork can be overtaken by some other fork due to producing more work. Probability of that happening is inversely proportional to difference in difficulty between those two fork. 
+
+
 -----
 So, if users want to know if for all practical purpose block is finalized, they need to wait for the chain containing that block to extend such that above probability becomes miniscule. So, Users need to wait for the chain containing that block to extend depending upon finality assurance required.
 
 So, Users need to wait for chain to extend by number of blocks proportional to finality assurance required.
+
+So, users need to wait for large enough difference in difficulty between current best fork and all other forks, before considering said block final for all practical purposes.
 -----
 
 
