@@ -46,7 +46,7 @@ In case of absolute finality support, multiple strategies exists:
 
 1. Before finalizing previous block, next block cannot be constructed. In this case forks are not allowed, as it is not possible for any siblings of block to exists.
 
-2. A distributed algorithm finalizing previous blocks depending upon certain parameters like votes casted on blocks,  
+2. A distributed algorithm finalizing previous blocks depending upon certain parameters like votes casted on blocks, block age, number of blocks built upon that block etc etc.
 
 ### Fork selection
 
