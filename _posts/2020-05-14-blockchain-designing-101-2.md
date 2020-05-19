@@ -16,7 +16,7 @@ Proof of work blockchains gets their name on the fact node requires to do some w
 
 ### Block construction
 
-In Proof of work blockchain, To construct a valid block node need to find an answer to computational puzzle. This puzzle need to be such that finding answer require node to put some effort in terms of resource usage (for example memory, cpu or network) but still feasible enough and verifying if that answer is correct need to be quick and easy. Effort required to calculate the solution can be quantified in terms of some unit of difficulty.
+In Proof of work blockchain, To construct a valid block node need to find an answer to a computational puzzle. This puzzle need to be such that finding answer require node to put some effort in terms of resource usage (for example memory, cpu or network) but still feasible enough and verifying if that answer is correct need to be quick and easy. Effort required to calculate the solution can be quantified in terms of some unit of difficulty.
 
 ### Fork selection
 
@@ -26,34 +26,30 @@ A fork having most difficulty as sum of difficulties of all blocks contained can
 
 Pure proof of work blockchain offer probabilistic finality, because there is always some probability however small, that block can become non-canonical once another fork overtakes fork containing that block. Probability of that happening is inversely proportion to amount of difficulty added on top of said block by building more blocks on top of that block, as more difficulties added on top less chance for a fork created at height less than block to overtake said block's fork.
 
+### Caveats
 
------
-Pure proof of work blockchain offers probabilistic finality, because there is always some probability however small, that current best fork can be overtaken by some other fork due to producing more work. Probability of that happening is inversely proportional to difference in difficulty between those two fork. 
-
-So, if users want to know if for all practical purpose block is finalized, they need to wait for the chain containing that block to extend such that above probability becomes miniscule. So, Users need to wait for the chain containing that block to extend depending upon finality assurance required.
-
-So, Users need to wait for chain to extend by number of blocks proportional to finality assurance required.
-
-So, users need to wait for large enough difference in difficulty between current best fork and all other forks, before considering said block final for all practical purposes.
------
-
+In proof of work blockchain every node need to do some effort while competing to produce the block, which is very costly in terms of energy usage. Since solving computational puzzle takes some time, block generation in Proof of work is slow by design.
 
 ## Proof-of-Stake
 
-In proof of stake blockchain, To be able to validate and produce blocks, nodes need to hold some amount of stake in the blockchain. In this blockchain, probability of block production is proportional to amount of stake a node holds. And nodes vote on the each block produced to indicate that block is valid as per them. This vote has a value proportional to stake of node which casted it.
+Proof of stake improves on Proof of work by shifting the requirement of block production for node to holding a stake in blockchain as opposed to working on finding solution to puzzle. This speeds up block production considerably. 
 
 ### Block construction
 
-In proof of stake blockchain nodes who have locked up some stake in blockchain can only produce block and cast vote. More stake node has more chance it has to produce the block. This stake acts as a collateral and incentivize the node to follow protocol.
+In proof of stake blockchain nodes who have locked up some stake in blockchain can only produce block and cast vote. Those nodes are called validators. More stake validator has more chance it has to produce the block. This stake acts as a collateral and incentivize the validator to act non-byzantine. 
 
 ### Block finality
 
-Proof of stake blockchain offers either absolute finality or probablistic finality. Probablistic finality works same as Proof-of-Work blockchain.
+Proof of stake blockchain offers either absolute finality or probabilistic finality. Probabilistic finality works same as Proof-of-Work blockchain.
 
 In case of absolute finality support, multiple strategies exists:
 
-1. If constructed block is valid and accepted by majority nodes, it is finalized by implementation. In this case there are no forks as there cannot be any alternate version of finalized block.
+1. Before finalizing previous block, next block cannot be constructed. In this case forks are not allowed, as it is not possible for any siblings of block to exists.
 
-2. A finality algorithm 
+2. A distributed algorithm finalizing previous blocks depending upon certain parameters like votes casted on blocks,  
 
+### Fork selection
 
+Fork selection in Proof of stake system is completely implementation dependent.
+
+### Caveats
