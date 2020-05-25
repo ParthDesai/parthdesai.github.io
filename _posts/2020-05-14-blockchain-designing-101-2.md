@@ -20,7 +20,7 @@ In Proof of work blockchain, To construct a valid block node need to find an ans
 
 ### Fork selection
 
-A fork having most difficulty as sum of difficulties of all blocks contained can be seen as a fork chosen to extend by a set of nodes with the largest cumulative resources. So, a node is incentivized to select that fork to append new block, due to high probability of said block remaining canonical. Node is also discouraged to extend multiple forks due to significant block production cost associated.
+A fork having most difficulty as sum of difficulties of all blocks contained can be seen as a fork chosen to extend by a set of nodes with the largest cumulative resources. So, a node is incentivized to select that fork to append new block, due to high probability of said block remaining canonical. Node is also discouraged to extend multiple forks due to significant effort required.
 
 ### Block finality
 
@@ -52,7 +52,7 @@ In case of absolute finality support, multiple strategies exists:
 
 ### Fork selection
 
-Fork selection in Proof of stake system is completely implementation dependent. Protocol level mechanism is required to discourage nodes to produce conflicting blocks.
+Fork selection in Proof of stake system is completely implementation dependent. Protocol level mechanism is required to discourage nodes to extend multiple forks.
 
 ### Caveats
 
