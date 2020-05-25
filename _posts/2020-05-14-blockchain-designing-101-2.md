@@ -16,7 +16,7 @@ Proof of work blockchain gets its name from the fact that node requires to do so
 
 ### Block construction
 
-In Proof of Work blockchain, To construct a valid block node need to find an answer to a computational puzzle. This puzzle needs to be such that finding answer requires a node to put significant but finite and quantifiable effort in terms of resource usage (for example memory, cpu or network), but verifying correctness of that answer needs to be quick and easy. Every node competes in finding a solution and producing a block as quickly as possible. So, more resources a node has more probability of it producing a block in lesser time and consequently including it in the blockchain. Effort required to calculate the solution can be quantified in terms of amount of resources utilized and can be expressed in units of difficulty.
+In Proof of Work blockchain, To construct a valid block node need to find an answer to a computational puzzle. This puzzle needs to be such that finding an answer requires a node to put significant but finite and quantifiable effort in terms of resource usage (for example memory, CPU, or network), but verifying correctness of that answer needs to be quick and easy. Every node competes in finding a solution and producing a block as quickly as possible. So, more resources a node has more probability of it producing a block in lesser time and consequently including it in the blockchain. Effort required to calculate the solution can be quantified in terms of amount of resources utilized and can be expressed in units of difficulty.
 
 ### Fork selection
 
