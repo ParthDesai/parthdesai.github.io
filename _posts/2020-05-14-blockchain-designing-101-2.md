@@ -16,7 +16,7 @@ Proof of work blockchain gets its name from the fact that node requires to do so
 
 ### Block construction
 
-In Proof of Work blockchain, To construct a valid block node need to find an answer to a computational puzzle. This puzzle needs to be such that finding answer requires a node to put significant but finite and quantifiable effort in terms of resource usage (for example memory, cpu or network), but verifying correctness of that answer needs to be quick and easy. Every node competes in finding a solution and producing a block as quickly as possible. So, more resources a node has more probability of it producing a block in lesser time. Effort required to calculate the solution can be quantified in terms of amount of resources utilized and can be expressed in units of difficulty.
+In Proof of Work blockchain, To construct a valid block node need to find an answer to a computational puzzle. This puzzle needs to be such that finding answer requires a node to put significant but finite and quantifiable effort in terms of resource usage (for example memory, cpu or network), but verifying correctness of that answer needs to be quick and easy. Every node competes in finding a solution and producing a block as quickly as possible. So, more resources a node has more probability of it producing a block in lesser time and consequently including it in the blockchain. Effort required to calculate the solution can be quantified in terms of amount of resources utilized and can be expressed in units of difficulty.
 
 ### Fork selection
 
@@ -36,7 +36,7 @@ Proof of stake differs with Proof of work by shifting the requirement of block p
 
 ### Block construction
 
-In proof of stake blockchain nodes that have locked up some stake in blockchain can only produce block and make an assertion. More stake node has more probability of it to produce the block and more weight to its assertions. In most implementations to make sure node acts honestly, it is required to put some portion of the node's stake as collateral which can be slashed if misbehavior proof is found. Validating a block require nodes with combined majority stake to assert that said block is valid.
+In proof of stake blockchain nodes that have locked up some stake in blockchain can only produce block and make an assertion. More stake node has more probability of it to produce the block and more weight to its assertions. In most implementations to make sure nodes act honestly, every node is required to put some portion of its stake as collateral which can be slashed if misbehavior proof is found. Validating a block require nodes with combined majority stake to assert that said block is valid.
 
 ### Block finality
 
