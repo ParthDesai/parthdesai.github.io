@@ -16,11 +16,11 @@ Proof of work blockchain gets its name from the fact that node requires to do so
 
 ### Block construction
 
-In Proof of work blockchain, To construct a valid block node need to find an answer to a computational puzzle. This puzzle needs to be such that finding answer requires a node to put some finite and quantifiable effort in terms of resource usage (for example memory, cpu or network), but verifying correctness of that answer need to be quick and easy. Every node competes in finding a solution and producing a block as quickly as possible. So, more resources a node has more probability of it producing a block in lesser time. Effort required to calculate the solution can be quantified in terms of amount of resources utilized and can be expressed in units of difficulty.
+In Proof of work blockchain, To construct a valid block node need to find an answer to a computational puzzle. This puzzle needs to be such that finding answer requires a node to put significant but finite and quantifiable effort in terms of resource usage (for example memory, cpu or network), but verifying correctness of that answer need to be quick and easy. Every node competes in finding a solution and producing a block as quickly as possible. So, more resources a node has more probability of it producing a block in lesser time. Effort required to calculate the solution can be quantified in terms of amount of resources utilized and can be expressed in units of difficulty.
 
 ### Fork selection
 
-A fork having most difficulty as sum of difficulties of all blocks contained can be seen as a fork chosen to extend by a set of nodes with the largest cumulative resources. So, a node is incentivized to select that fork to append new block, due to high probability of said block remaining canonical. Node is also discouraged to extend multiple forks due to significant effort required.
+A fork having most difficulty as sum of difficulties of all blocks contained can be seen as a fork chosen to extend by a set of nodes with the largest cumulative resources. So, a node is incentivized to select that fork to append new block, due to high probability of said block remaining canonical. Due to amount of effort required to produce a block, nodes are discouraged to extend multiple forks concurrently.
 
 ### Block finality
 
@@ -36,7 +36,7 @@ Proof of stake differs with Proof of work by shifting the requirement of block p
 
 ### Block construction
 
-In proof of stake blockchain nodes which have locked up some stake in blockchain can only produce block and make an assertion. More stake node has more probability of it to produce the block and more weight to its assertions. Most implementations require this stake to be put up as slashable collateral, to incentivize node to act non-byzantine. Validating a block require nodes with combined majority stake to assert that said block is valid.
+In proof of stake blockchain nodes which have locked up some stake in blockchain can only produce block and make an assertion. More stake node has more probability of it to produce the block and more weight to its assertions. In most implementations to make sure node acts honestly, it is required to put some portion of node's stake as collateral which can be slashed in case of a misbehavior. Validating a block require nodes with combined majority stake to assert that said block is valid.
 
 ### Block finality
 
