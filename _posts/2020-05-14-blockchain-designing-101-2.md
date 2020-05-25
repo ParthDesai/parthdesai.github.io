@@ -20,7 +20,7 @@ In Proof of Work blockchain, To construct a valid block node need to find an ans
 
 ### Fork selection
 
-A fork having most difficulty as sum of difficulties of all blocks contained can be seen as a fork chosen to extend by a set of nodes with the largest cumulative resources. So, a node is incentivized to select that fork to append new block, due to high probability of said block remaining canonical. Due to amount of effort required to produce a block, nodes are discouraged to extend multiple forks concurrently.
+A fork with most difficulty as sum of difficulties of all blocks contained can be seen as a fork chosen to extend by a set of nodes with the largest cumulative resources. So, a node is incentivized to select that fork to append new block, due to high probability of said block remaining canonical. Due to amount of effort required to produce a block, nodes are discouraged to extend multiple forks concurrently.
 
 ### Block finality
 
