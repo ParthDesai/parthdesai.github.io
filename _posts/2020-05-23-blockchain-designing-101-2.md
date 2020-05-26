@@ -34,7 +34,7 @@ Pure proof of work blockchain offers probabilistic finality. There is always som
 
 In proof of work blockchain every node need to do some effort while competing to produce the block, which is very costly in terms of energy usage. Since solving computational puzzle takes some time, block generation in Proof of work is slow by design.
 
----------
+-----------
 
 ## Proof-of-Stake
 
