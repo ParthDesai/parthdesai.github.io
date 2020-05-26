@@ -10,6 +10,8 @@ comments: true
 
 This is the second part of blockchain design 101 series. You can read first part [here](/articles/2020/05/08/blockchain-designing-101-1/). In this part, we are going to talk about two of the most popular blockchain designs.
 
+-----------
+
 ## Proof-of-Work
 
 Proof of work blockchain gets its name from the fact that node requires to do some work, in order to produce a block.
@@ -32,9 +34,11 @@ Pure proof of work blockchain offers probabilistic finality. There is always som
 
 In proof of work blockchain every node need to do some effort while competing to produce the block, which is very costly in terms of energy usage. Since solving computational puzzle takes some time, block generation in Proof of work is slow by design.
 
+---------
+
 ## Proof-of-Stake
 
-Proof of stake differs with Proof of work by shifting the requirement of block production for node to holding a stake in blockchain as opposed to working on finding solution to puzzle. This speeds up block generation considerably.
+Proof of stake differs with Proof of work by shifting the requirement of block production for node to holding a stake in blockchain as opposed to finding a solution to puzzle. This speeds up block generation considerably.
 
 <img src="/public/images/pos.png" alt="Proof of stake illustration" style="width:800px;"/>
 
@@ -61,5 +65,7 @@ Fork selection in Proof of stake system is completely implementation dependent. 
 ### Caveats
 
 Since in proof of stake blockchain there isn't any physical anchoring of blockchain as opposed to proof of work where you have to spend real world energy to produce blocks, some protocol level attacks are comparatively easy to carry out in the naive implementations.
+
+-----------
 
 In the next part, we will do a case study of the most popular implementations of Proof of Work and Proof of Stake design.
