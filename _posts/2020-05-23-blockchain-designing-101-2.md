@@ -3,7 +3,7 @@ layout: post
 title:  Blockchain Design 101 - Part 2
 description: "Describes what goes under the hood of two most popular blockchain designs Proof-of-Work and Proof-of-Stake."
 category: articles
-tags: [blockchain, block, design, PoA, PoS, DPoS]
+tags: [blockchain, block, design, PoA, PoS]
 image: "pow_pos_thumb_1.png"
 comments: true
 ---
