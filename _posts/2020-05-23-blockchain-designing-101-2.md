@@ -54,7 +54,7 @@ In case of absolute finality support, Some of the most common strategies employe
 
 1. Before finalizing previous block, next block cannot be constructed. In this case forks are not allowed, as it is not possible for any siblings of a block to exist.
 
-2. A distributed algorithm finalizing blocks depending upon certain parameters like block age, combined stake of nodes asserted validity of that block, number of blocks built upon that block etc.
+2. A distributed algorithm finalizing blocks depending upon certain parameters like block age, combined stake of nodes which asserted validity of that block, number of blocks built upon that block etc.
 
 3. A distributed algorithm finalizing a block depending upon finality assertions made by nodes for that block or its descendants.
 
