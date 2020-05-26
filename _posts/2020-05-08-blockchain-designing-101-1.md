@@ -8,7 +8,7 @@ image: "blockchain-example.png"
 comments: true
 ---
 
-This is the first part of blockchain design 101 series. Aim of this blog series is to describe in detail what goes under the hood of blockchain. In this part, We are going to talk about some common blockchain concepts.
+This is the first part of blockchain design 101 series. You can read second part [here](/articles/2020/05/23/blockchain-designing-101-2/). Aim of this blog series is to describe in detail what goes under the hood of blockchain. In this part, We are going to talk about some common blockchain concepts.
 
 -------
 
