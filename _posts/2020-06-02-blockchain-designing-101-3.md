@@ -27,15 +27,15 @@ Users can submit three types of state transition operations (or in ethereum term
 3. Deploy a new program
 
 
-Ethereum's native currency is called *Ether* and smallest fraction of Ether is called *Wei*. One Ether equals to 10<sup>19</sup> Wei.
+Ethereum's native currency is called Ether and smallest fraction of Ether is called *Wei*. One Ether equals to 10<sup>19</sup> Wei.
 
 ### Block construction
-In ethereum, algorithm to compute computational puzzle used is *Ethash*. Ethash uses a large dataset that is periodically regenerated, and slowly grows over time, which makes it fairly ASIC resistant. To mine a block, node need to find an eight byte *nonce* which satisfies Ethash's verification conditions, which can be tuned to increase/decrease difficulty. Ethereum tries to keep time required to solve the puzzle in range of 10 to 19 second regardless of continuos change in total resources of the network by adjusting difficulty depending upon time taken to solve the puzzle for previous block. Once node finds solution to the Ethash puzzle, it will prepare a block and broadcast it into the network.
+In ethereum, *Ethash* algorithm is used as a proof of work computational puzzle. Ethash uses a large dataset that is periodically regenerated and slowly grows over time, which makes it fairly ASIC resistant. To mine a block, node needs to find an eight-byte *nonce* which satisfies Ethash's verification conditions, which can be tuned to increase/decrease difficulty. Ethereum tries to keep time required to solve the puzzle in a range of 10 to 19 seconds regardless of continuos change in total resources of the network by adjusting difficulty depending upon time taken to solve the puzzle for the previous block. Once node finds a solution to the Ethash puzzle, it will prepare a block and broadcast it into the network.
 
 Block contains a set of state transition operations and block header containing nonce, reference to parent block, and optionally reference to siblings of its parent.
 
 Whenever a node constructs a valid block and it becomes part of the canonical fork, node is rewarded:
-1. Fixed fee of 2 *Ether* as a reward for constructing a valid block
+1. Fixed fee of 2 Ether as a reward for constructing a valid block
 2. Execution Fee (Or in ethereum terminology Gas) for every state transition operations included in the block
 
 ### Fork selection
