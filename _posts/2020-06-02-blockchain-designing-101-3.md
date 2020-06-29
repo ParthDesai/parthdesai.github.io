@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Blockchain Design 101 - Part 3
-description: "High level overview of inner working of Cosmos Hub and Ethereum network"
+description: "We are going to look at inner workings of two famous blockchains: PoW blockchain ethereum and PoS blockchain cosmos hub."
 category: articles
 tags: [blockchain, block, design, PoW, PoS, ProofOfWork, ProofOfStake, Cosmos, Gaia, Ethereum]
 image: "cosmos_hub_ethereum.png"
