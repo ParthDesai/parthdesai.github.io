@@ -8,7 +8,7 @@ image: "cosmos_hub_ethereum.png"
 comments: true
 ---
 
-This is the third part of blockchain design 101 series. You can read second part [here](/articles/2020/05/23/blockchain-designing-101-2/). In this part we are going to present overview of ethereum and cosmos hub.
+This is the third part of blockchain design 101 series. You can read second part [here](/articles/2020/05/23/blockchain-designing-101-2/). In this part we are going to present an overview of ethereum and cosmos hub.
 
 ---------------------------------
 
@@ -27,7 +27,7 @@ Users can submit three types of state transition operations (or in ethereum term
 3. Deploy a new program
 
 
-Ethereum's native currency is called Ether and smallest fraction of Ether is called *Wei*. One Ether equals to 10<sup>19</sup> Wei.
+Ethereum’s native currency is called Ether and the smallest fraction of Ether is called *Wei*. One Ether equals to 10<sup>19</sup> Wei.
 
 ### Block construction
 In ethereum, *Ethash* algorithm is used as a proof of work computational puzzle. Ethash uses a large dataset that is periodically regenerated and slowly grows over time, which makes it fairly ASIC resistant. To mine a block, node needs to find an eight-byte *nonce* which satisfies Ethash's verification conditions, which can be tuned to increase/decrease difficulty. Ethereum tries to keep time required to solve the puzzle in a range of 10 to 19 seconds regardless of continuos change in total resources of the network by adjusting difficulty depending upon time taken to solve the puzzle for the previous block. Once node finds a solution to the Ethash puzzle, it will prepare a block and broadcast it into the network.
@@ -75,4 +75,4 @@ To finalize a block, validators with a combined voting power of >66% need to vot
 
 ---------------------------------
 
-This is final part of the Blockchain Design 101 series. In next series, we will look at advanced blockchain design concepts.
+This is final part of the Blockchain Design 101 series. In the next series, we will look at advanced blockchain design concepts.
